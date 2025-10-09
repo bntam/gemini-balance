@@ -5,7 +5,7 @@ services:
     image: ghcr.io/snailyp/gemini-balance:latest
     container_name: gemini-balance
     restart: unless-stopped
-     ports:
+    ports:
       # Thay đổi cổng HOST từ 8000 sang 8001 (Host Port : Container Port)
       - "8010:8000"
     env_file:
